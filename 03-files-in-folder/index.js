@@ -33,7 +33,7 @@ const readDirectory = async () => {
                 const extension = getExtension(pathFile);
                 const fileSize = getSize(fileStats);
 
-                const output = `${baseName} - ${extension} -  ${fileSize}b`;
+                const output = `${baseName} - ${extension} -  ${fileSize / 1024}kb`;
                 console.log(output);
             }
         });
