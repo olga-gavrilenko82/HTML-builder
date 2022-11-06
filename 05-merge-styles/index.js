@@ -1,7 +1,8 @@
-const { stdout } = process;
 const path = require('path');
-const { readdir, writeFile, stat } = require('fs/promises');
 const fs = require('fs');
+const { stdout } = process;
+const { readdir, writeFile, stat } = require('fs/promises');
+
 
 const sourcePath = path.join(__dirname, 'styles');
 const bundlePath = path.join(__dirname, 'project-dist');

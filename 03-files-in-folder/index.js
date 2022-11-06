@@ -28,11 +28,9 @@ const readDirectory = async () => {
 
             if(fileStats.isFile()) {
                 const ext = path.extname(pathFile);
-
                 const baseName = getBaseName(pathFile, ext);
                 const extension = getExtension(pathFile);
                 const fileSize = getSize(fileStats);
-
                 const output = `${baseName} - ${extension} -  ${fileSize / 1024}kb`;
                 console.log(output);
             }
